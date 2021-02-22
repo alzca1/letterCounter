@@ -9,7 +9,7 @@ function letterCounter (input){
 
   for (const key of input) {
     let count = letterMap.get(key);
-    letterMap.set(key, count + 1);
+    letterMap.set(key, count++);
   }
 
   for (const [key,value] of letterMap) {
