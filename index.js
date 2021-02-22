@@ -1,7 +1,7 @@
 function letterCounter (input){
  const letterMap = new Map();
  const count = 0;
- const array = [];
+ const result = [];
 
   for (const key of input) {
    letterMap.set(key,count);
@@ -13,10 +13,10 @@ function letterCounter (input){
   }
 
   for (const [key,value] of letterMap) {
-    array.push([key, value])
+    result.push([key, value])
   }
   
-  console.log(array)
+  console.log(result)
  }
 
 letterCounter('aaaabbbbbcca');
